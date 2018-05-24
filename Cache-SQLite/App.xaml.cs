@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using CacheSQLite.Views;
+using Xamarin.Forms;
 
 namespace CacheSQLite
 {
@@ -8,7 +9,7 @@ namespace CacheSQLite
         {
             InitializeComponent();
 
-            MainPage = new Cache_SQLitePage();
+            MainPage = new HomeView();
         }
 
         protected override void OnStart()
