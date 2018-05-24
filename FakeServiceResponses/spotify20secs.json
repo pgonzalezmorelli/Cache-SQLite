@@ -1,0 +1,541 @@
+{
+    "albums": {
+        "href": "https://api.spotify.com/v1/browse/new-releases?offset=0&limit=30",
+        "items": [
+            {
+                "album_type": "single",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/6MDME20pz9RveH9rEXvrOM"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/6MDME20pz9RveH9rEXvrOM",
+                        "id": "6MDME20pz9RveH9rEXvrOM",
+                        "name": "Clean Bandit",
+                        "type": "artist",
+                        "uri": "spotify:artist:6MDME20pz9RveH9rEXvrOM"
+                    },
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/6S2OmqARrzebs0tKUEyXyp"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/6S2OmqARrzebs0tKUEyXyp",
+                        "id": "6S2OmqARrzebs0tKUEyXyp",
+                        "name": "Demi Lovato",
+                        "type": "artist",
+                        "uri": "spotify:artist:6S2OmqARrzebs0tKUEyXyp"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "BE",
+                    "BG",
+                    "BO",
+                    "BR",
+                    "CA",
+                    "CH",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "DO",
+                    "EC",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GR",
+                    "GT",
+                    "HK",
+                    "HN",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IS",
+                    "IT",
+                    "JP",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MC",
+                    "MT",
+                    "MX",
+                    "MY",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NZ",
+                    "PA",
+                    "PE",
+                    "PH",
+                    "PL",
+                    "PT",
+                    "PY",
+                    "RO",
+                    "SE",
+                    "SG",
+                    "SK",
+                    "SV",
+                    "TH",
+                    "TR",
+                    "TW",
+                    "US",
+                    "UY",
+                    "VN",
+                    "ZA"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/1q7a5wZeti0neU2jDn8Dz3"
+                },
+                "href": "https://api.spotify.com/v1/albums/1q7a5wZeti0neU2jDn8Dz3",
+                "id": "1q7a5wZeti0neU2jDn8Dz3",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/cafe96b4ba24bce00638ddff06470f3a6a039581",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/2cc7a54492e7b0cdf803876d6e3da165d5870df8",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/2dfa6092685c52a7a1df807a1e15a9fdc3f0ff0a",
+                        "width": 64
+                    }
+                ],
+                "name": "Solo (feat. Demi Lovato)",
+                "release_date": "2018-05-17",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:1q7a5wZeti0neU2jDn8Dz3"
+            },
+            {
+                "album_type": "single",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/2o5jDhtHVPhrJdv3cEQ99Z"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/2o5jDhtHVPhrJdv3cEQ99Z",
+                        "id": "2o5jDhtHVPhrJdv3cEQ99Z",
+                        "name": "Tiësto",
+                        "type": "artist",
+                        "uri": "spotify:artist:2o5jDhtHVPhrJdv3cEQ99Z"
+                    },
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/5vQfv3s2Z2SRdPZKr82ABw"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/5vQfv3s2Z2SRdPZKr82ABw",
+                        "id": "5vQfv3s2Z2SRdPZKr82ABw",
+                        "name": "Dzeko",
+                        "type": "artist",
+                        "uri": "spotify:artist:5vQfv3s2Z2SRdPZKr82ABw"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "BE",
+                    "BG",
+                    "BO",
+                    "BR",
+                    "CA",
+                    "CH",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "DO",
+                    "EC",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GR",
+                    "GT",
+                    "HK",
+                    "HN",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IS",
+                    "IT",
+                    "JP",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MC",
+                    "MT",
+                    "MX",
+                    "MY",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NZ",
+                    "PA",
+                    "PE",
+                    "PH",
+                    "PL",
+                    "PT",
+                    "PY",
+                    "RO",
+                    "SE",
+                    "SG",
+                    "SK",
+                    "SV",
+                    "TH",
+                    "TR",
+                    "TW",
+                    "US",
+                    "UY",
+                    "VN",
+                    "ZA"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/0vRcQquqBlFvnezWldWfmt"
+                },
+                "href": "https://api.spotify.com/v1/albums/0vRcQquqBlFvnezWldWfmt",
+                "id": "0vRcQquqBlFvnezWldWfmt",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/a2e6c52ccbec017999ee6a9176be2c3aa185f550",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ef574a77b62bb9b85f9ebe1e6ebfe77283224f86",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/fe9afad29eea691e2833b6670237e719860442ed",
+                        "width": 64
+                    }
+                ],
+                "name": "Jackie Chan",
+                "release_date": "2018-05-18",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:0vRcQquqBlFvnezWldWfmt"
+            },
+            {
+                "album_type": "single",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/2DlGxzQSjYe5N6G9nkYghR"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/2DlGxzQSjYe5N6G9nkYghR",
+                        "id": "2DlGxzQSjYe5N6G9nkYghR",
+                        "name": "Jennifer Lopez",
+                        "type": "artist",
+                        "uri": "spotify:artist:2DlGxzQSjYe5N6G9nkYghR"
+                    },
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/0QHgL1lAIqAw0HtD7YldmP"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/0QHgL1lAIqAw0HtD7YldmP",
+                        "id": "0QHgL1lAIqAw0HtD7YldmP",
+                        "name": "DJ Khaled",
+                        "type": "artist",
+                        "uri": "spotify:artist:0QHgL1lAIqAw0HtD7YldmP"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "BE",
+                    "BG",
+                    "BO",
+                    "BR",
+                    "CA",
+                    "CH",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "DO",
+                    "EC",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GR",
+                    "GT",
+                    "HK",
+                    "HN",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IS",
+                    "IT",
+                    "JP",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MC",
+                    "MT",
+                    "MX",
+                    "MY",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NZ",
+                    "PA",
+                    "PE",
+                    "PH",
+                    "PL",
+                    "PT",
+                    "PY",
+                    "RO",
+                    "SE",
+                    "SG",
+                    "SK",
+                    "SV",
+                    "TH",
+                    "TR",
+                    "TW",
+                    "US",
+                    "UY",
+                    "VN",
+                    "ZA"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/1fT1s4VMXc9xGIamDyFz9S"
+                },
+                "href": "https://api.spotify.com/v1/albums/1fT1s4VMXc9xGIamDyFz9S",
+                "id": "1fT1s4VMXc9xGIamDyFz9S",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/d25de8c889f35756fdfde88125c2d2d95339a7a1",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/c308300ebb0f16d2c4c09f03d5369001f63455cd",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/7571e1cab88991742b138a3cc5c0ec5f53b2f1b4",
+                        "width": 64
+                    }
+                ],
+                "name": "Dinero",
+                "release_date": "2018-05-17",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:1fT1s4VMXc9xGIamDyFz9S"
+            },
+            {
+                "album_type": "album",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/7C4sUpWGlTy7IANjruj02I"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/7C4sUpWGlTy7IANjruj02I",
+                        "id": "7C4sUpWGlTy7IANjruj02I",
+                        "name": "Peter Gabriel",
+                        "type": "artist",
+                        "uri": "spotify:artist:7C4sUpWGlTy7IANjruj02I"
+                    }
+                ],
+                "available_markets": [],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/1vJ8rCzq6BJtKGz9Yf6oT3"
+                },
+                "href": "https://api.spotify.com/v1/albums/1vJ8rCzq6BJtKGz9Yf6oT3",
+                "id": "1vJ8rCzq6BJtKGz9Yf6oT3",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/d1eb8a522bb9be1e205200d5ce6368cbf7970cc6",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/dc6193b26356bdf6f7d2aca210431a3f0ac2cca0",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/9f9447eefe31032ad0a3328c24333d82ce7f3bc4",
+                        "width": 64
+                    }
+                ],
+                "name": "So (25th Anniversary Deluxe Edition)",
+                "release_date": "1986-05-19",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:1vJ8rCzq6BJtKGz9Yf6oT3"
+            },
+            {
+                "album_type": "album",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/0C8ZW7ezQVs4URX5aX7Kqx"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/0C8ZW7ezQVs4URX5aX7Kqx",
+                        "id": "0C8ZW7ezQVs4URX5aX7Kqx",
+                        "name": "Selena Gomez",
+                        "type": "artist",
+                        "uri": "spotify:artist:0C8ZW7ezQVs4URX5aX7Kqx"
+                    },
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/5Pwc4xIPtQLFEnJriah9YJ"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/5Pwc4xIPtQLFEnJriah9YJ",
+                        "id": "5Pwc4xIPtQLFEnJriah9YJ",
+                        "name": "OneRepublic",
+                        "type": "artist",
+                        "uri": "spotify:artist:5Pwc4xIPtQLFEnJriah9YJ"
+                    },
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/6Ad91Jof8Niiw0lGLLi3NW"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/6Ad91Jof8Niiw0lGLLi3NW",
+                        "id": "6Ad91Jof8Niiw0lGLLi3NW",
+                        "name": "YUNGBLUD",
+                        "type": "artist",
+                        "uri": "spotify:artist:6Ad91Jof8Niiw0lGLLi3NW"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "BE",
+                    "BG",
+                    "BO",
+                    "BR",
+                    "CA",
+                    "CH",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "DO",
+                    "EC",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GR",
+                    "GT",
+                    "HK",
+                    "HN",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IS",
+                    "IT",
+                    "JP",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MC",
+                    "MT",
+                    "MX",
+                    "MY",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NZ",
+                    "PA",
+                    "PE",
+                    "PH",
+                    "PL",
+                    "PT",
+                    "PY",
+                    "RO",
+                    "SE",
+                    "SG",
+                    "SK",
+                    "SV",
+                    "TH",
+                    "TR",
+                    "TW",
+                    "US",
+                    "UY",
+                    "VN",
+                    "ZA"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/4RpgjxgSxcRwGNuWnImneN"
+                },
+                "href": "https://api.spotify.com/v1/albums/4RpgjxgSxcRwGNuWnImneN",
+                "id": "4RpgjxgSxcRwGNuWnImneN",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/5b51ec7d93e47be2faf14e27728e06c74228c34a",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/8032b5be825a0b6bd4c0e066be99ab6d1bf744f5",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/e39c219ffa225024783546a8689b4a5a266b9205",
+                        "width": 64
+                    }
+                ],
+                "name": "13 Reasons Why (Season 2)",
+                "release_date": "2018-05-18",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:4RpgjxgSxcRwGNuWnImneN"
+            }
+        ],
+        "limit": 30,
+        "next": "https://api.spotify.com/v1/browse/new-releases?offset=30&limit=30",
+        "offset": 0,
+        "previous": null,
+        "total": 500
+    }
+}

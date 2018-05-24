@@ -51,6 +51,8 @@
     <Compile Include="Repositories\Database\IDatabase.cs" />
     <Compile Include="Repositories\Database\IDatabaseConnection.cs" />
     <Compile Include="Models\Result.cs" />
+    <Compile Include="Models\Spotify.cs" />
+    <Compile Include="Services\SpotifyService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

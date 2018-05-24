@@ -1,0 +1,577 @@
+{
+    "albums": {
+        "href": "https://api.spotify.com/v1/browse/new-releases?offset=0&limit=30",
+        "items": [
+            {
+                "album_type": "single",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/1gPhS1zisyXr5dHTYZyiMe"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/1gPhS1zisyXr5dHTYZyiMe",
+                        "id": "1gPhS1zisyXr5dHTYZyiMe",
+                        "name": "Kevin Gates",
+                        "type": "artist",
+                        "uri": "spotify:artist:1gPhS1zisyXr5dHTYZyiMe"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "BE",
+                    "BG",
+                    "BO",
+                    "BR",
+                    "CA",
+                    "CH",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "DO",
+                    "EC",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GR",
+                    "GT",
+                    "HK",
+                    "HN",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IS",
+                    "IT",
+                    "JP",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MC",
+                    "MT",
+                    "MX",
+                    "MY",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NZ",
+                    "PA",
+                    "PE",
+                    "PH",
+                    "PL",
+                    "PT",
+                    "PY",
+                    "RO",
+                    "SE",
+                    "SG",
+                    "SK",
+                    "SV",
+                    "TH",
+                    "TR",
+                    "TW",
+                    "US",
+                    "UY",
+                    "VN",
+                    "ZA"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/2mnmriBwjAJfBMgndTJYL8"
+                },
+                "href": "https://api.spotify.com/v1/albums/2mnmriBwjAJfBMgndTJYL8",
+                "id": "2mnmriBwjAJfBMgndTJYL8",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/31f91e4a17747a961d995f901c6bb2ebf1731a44",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/abf86842417e148dafd9cdb308f9e7f47497e6d6",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/df995810f3baf67fb9c9fe81f6a642af8217d673",
+                        "width": 64
+                    }
+                ],
+                "name": "Chained To The City",
+                "release_date": "2018-05-16",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:2mnmriBwjAJfBMgndTJYL8"
+            },
+            {
+                "album_type": "album",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/6DoH7ywD5BcQvjloe9OcIj"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/6DoH7ywD5BcQvjloe9OcIj",
+                        "id": "6DoH7ywD5BcQvjloe9OcIj",
+                        "name": "Ray LaMontagne",
+                        "type": "artist",
+                        "uri": "spotify:artist:6DoH7ywD5BcQvjloe9OcIj"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "BE",
+                    "BG",
+                    "BO",
+                    "BR",
+                    "CA",
+                    "CH",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "DO",
+                    "EC",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GR",
+                    "GT",
+                    "HK",
+                    "HN",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IS",
+                    "IT",
+                    "JP",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MC",
+                    "MT",
+                    "MX",
+                    "MY",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NZ",
+                    "PA",
+                    "PE",
+                    "PH",
+                    "PL",
+                    "PT",
+                    "PY",
+                    "RO",
+                    "SE",
+                    "SG",
+                    "SK",
+                    "SV",
+                    "TH",
+                    "TR",
+                    "TW",
+                    "US",
+                    "UY",
+                    "VN",
+                    "ZA"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/7dozbeo4NF2OyFayHPKI1f"
+                },
+                "href": "https://api.spotify.com/v1/albums/7dozbeo4NF2OyFayHPKI1f",
+                "id": "7dozbeo4NF2OyFayHPKI1f",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/914b0ec269126f269d535c2f505a9c54d97040ee",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/3bd85fe5d3428eb67367fd1c42852fe16ab18f03",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/2f181a8fb7014f3e9cdaa6c18eaaeb0b3fade690",
+                        "width": 64
+                    }
+                ],
+                "name": "Part Of The Light",
+                "release_date": "2018-05-18",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:7dozbeo4NF2OyFayHPKI1f"
+            },
+            {
+                "album_type": "single",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/6nS5roXSAGhTGr34W6n7Et"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/6nS5roXSAGhTGr34W6n7Et",
+                        "id": "6nS5roXSAGhTGr34W6n7Et",
+                        "name": "Disclosure",
+                        "type": "artist",
+                        "uri": "spotify:artist:6nS5roXSAGhTGr34W6n7Et"
+                    },
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/4G5ZJny3HvX6Il7eHVfnNC"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/4G5ZJny3HvX6Il7eHVfnNC",
+                        "id": "4G5ZJny3HvX6Il7eHVfnNC",
+                        "name": "Fatoumata Diawara",
+                        "type": "artist",
+                        "uri": "spotify:artist:4G5ZJny3HvX6Il7eHVfnNC"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "BE",
+                    "BG",
+                    "BO",
+                    "BR",
+                    "CA",
+                    "CH",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "DO",
+                    "EC",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GR",
+                    "GT",
+                    "HK",
+                    "HN",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IS",
+                    "IT",
+                    "JP",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MC",
+                    "MT",
+                    "MX",
+                    "MY",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NZ",
+                    "PA",
+                    "PE",
+                    "PH",
+                    "PL",
+                    "PT",
+                    "PY",
+                    "RO",
+                    "SE",
+                    "SG",
+                    "SK",
+                    "SV",
+                    "TH",
+                    "TR",
+                    "TW",
+                    "US",
+                    "UY",
+                    "VN",
+                    "ZA"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/3mKvAiTrhpJUTAFsJXmjTE"
+                },
+                "href": "https://api.spotify.com/v1/albums/3mKvAiTrhpJUTAFsJXmjTE",
+                "id": "3mKvAiTrhpJUTAFsJXmjTE",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/531a127e1f16f25d42591a2f67cc4c0541895e71",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/528c2d8e1d60d92a355eca9a76e5e9bac63e1afd",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/1766c519ed37f9b333804865b215c8874193d9c1",
+                        "width": 64
+                    }
+                ],
+                "name": "Ultimatum",
+                "release_date": "2018-05-17",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:3mKvAiTrhpJUTAFsJXmjTE"
+            },
+            {
+                "album_type": "single",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/7i9j813KFoSBMldGqlh2Z1"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/7i9j813KFoSBMldGqlh2Z1",
+                        "id": "7i9j813KFoSBMldGqlh2Z1",
+                        "name": "Riton",
+                        "type": "artist",
+                        "uri": "spotify:artist:7i9j813KFoSBMldGqlh2Z1"
+                    },
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/59iOp415oyqGlBHyAhu4z3"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/59iOp415oyqGlBHyAhu4z3",
+                        "id": "59iOp415oyqGlBHyAhu4z3",
+                        "name": "Kah-Lo",
+                        "type": "artist",
+                        "uri": "spotify:artist:59iOp415oyqGlBHyAhu4z3"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "BE",
+                    "BG",
+                    "BO",
+                    "BR",
+                    "CA",
+                    "CH",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "DO",
+                    "EC",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GR",
+                    "GT",
+                    "HK",
+                    "HN",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IS",
+                    "IT",
+                    "JP",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MC",
+                    "MT",
+                    "MX",
+                    "MY",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NZ",
+                    "PA",
+                    "PE",
+                    "PH",
+                    "PL",
+                    "PT",
+                    "PY",
+                    "RO",
+                    "SE",
+                    "SG",
+                    "SK",
+                    "SV",
+                    "TH",
+                    "TR",
+                    "TW",
+                    "US",
+                    "UY",
+                    "VN",
+                    "ZA"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/7lCa8DnB02s8GHy26QqvOw"
+                },
+                "href": "https://api.spotify.com/v1/albums/7lCa8DnB02s8GHy26QqvOw",
+                "id": "7lCa8DnB02s8GHy26QqvOw",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/f2351cd9f53d41ad7f086f92860ed13ca2ca96b7",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/87a19c34c037c056c7b56cba3b1bf84ccdd72f52",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ea9da6ddf945e807c6aab630f8d8c004b3cf092c",
+                        "width": 64
+                    }
+                ],
+                "name": "Ginger",
+                "release_date": "2018-05-18",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:7lCa8DnB02s8GHy26QqvOw"
+            },
+            {
+                "album_type": "compilation",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+                        "id": "0LyfQWJT6nXafLPZqxe9Of",
+                        "name": "Varios Artistas",
+                        "type": "artist",
+                        "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "BE",
+                    "BG",
+                    "BO",
+                    "BR",
+                    "CA",
+                    "CH",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "DO",
+                    "EC",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GR",
+                    "GT",
+                    "HK",
+                    "HN",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IS",
+                    "IT",
+                    "JP",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MC",
+                    "MT",
+                    "MX",
+                    "MY",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NZ",
+                    "PA",
+                    "PE",
+                    "PH",
+                    "PL",
+                    "PT",
+                    "PY",
+                    "RO",
+                    "SE",
+                    "SG",
+                    "SK",
+                    "SV",
+                    "TH",
+                    "TR",
+                    "TW",
+                    "US",
+                    "UY",
+                    "VN",
+                    "ZA"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/6m7n9JuAOMcy8X3ntO0Ktf"
+                },
+                "href": "https://api.spotify.com/v1/albums/6m7n9JuAOMcy8X3ntO0Ktf",
+                "id": "6m7n9JuAOMcy8X3ntO0Ktf",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/fbba992b3139de7031bbd9514d2c2cf3a483cc8a",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/a4c83e64584828162fb75bfedc07f585723025fd",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/53cfc44a9f1809297a5bced457b0d4ac508dbb0e",
+                        "width": 64
+                    }
+                ],
+                "name": "Mean Girls (Original Broadway Cast Recording)",
+                "release_date": "2018-05-18",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:6m7n9JuAOMcy8X3ntO0Ktf"
+            }
+        ],
+        "limit": 30,
+        "next": "https://api.spotify.com/v1/browse/new-releases?offset=30&limit=30",
+        "offset": 0,
+        "previous": null,
+        "total": 500
+    }
+}

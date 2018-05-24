@@ -1,0 +1,425 @@
+{
+    "albums": {
+        "href": "https://api.spotify.com/v1/browse/new-releases?offset=0&limit=30",
+        "items": [
+            {
+                "album_type": "compilation",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+                        "id": "0LyfQWJT6nXafLPZqxe9Of",
+                        "name": "Varios Artistas",
+                        "type": "artist",
+                        "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "BE",
+                    "BG",
+                    "BO",
+                    "BR",
+                    "CA",
+                    "CH",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "DO",
+                    "EC",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GR",
+                    "GT",
+                    "HK",
+                    "HN",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IS",
+                    "IT",
+                    "JP",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MC",
+                    "MT",
+                    "MX",
+                    "MY",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NZ",
+                    "PA",
+                    "PE",
+                    "PH",
+                    "PL",
+                    "PT",
+                    "PY",
+                    "RO",
+                    "SE",
+                    "SG",
+                    "SK",
+                    "SV",
+                    "TH",
+                    "TR",
+                    "TW",
+                    "US",
+                    "UY",
+                    "VN",
+                    "ZA"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/2NvfPngtKzNClIdFMuUAxl"
+                },
+                "href": "https://api.spotify.com/v1/albums/2NvfPngtKzNClIdFMuUAxl",
+                "id": "2NvfPngtKzNClIdFMuUAxl",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/cfe1e1a99277258a4cc639d203b9ef079780c429",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/e10dff9c3242b9b8757267ad794c18f959209c50",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/5741d756e4899677fe93f55d61cc61d2b5fdeed9",
+                        "width": 64
+                    }
+                ],
+                "name": "Deadpool 2 (Original Motion Picture Soundtrack)",
+                "release_date": "2018-05-18",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:2NvfPngtKzNClIdFMuUAxl"
+            },
+            {
+                "album_type": "single",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/1l7ZsJRRS8wlW3WfJfPfNS"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/1l7ZsJRRS8wlW3WfJfPfNS",
+                        "id": "1l7ZsJRRS8wlW3WfJfPfNS",
+                        "name": "Christina Aguilera",
+                        "type": "artist",
+                        "uri": "spotify:artist:1l7ZsJRRS8wlW3WfJfPfNS"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "BE",
+                    "BG",
+                    "BO",
+                    "BR",
+                    "CA",
+                    "CH",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "DO",
+                    "EC",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GR",
+                    "GT",
+                    "HK",
+                    "HN",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IS",
+                    "IT",
+                    "JP",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MC",
+                    "MT",
+                    "MX",
+                    "MY",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NZ",
+                    "PA",
+                    "PE",
+                    "PH",
+                    "PL",
+                    "PT",
+                    "PY",
+                    "RO",
+                    "SE",
+                    "SG",
+                    "SK",
+                    "SV",
+                    "TH",
+                    "TR",
+                    "TW",
+                    "US",
+                    "UY",
+                    "VN",
+                    "ZA"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/323CkC5IKF9IakoJFSE8Yy"
+                },
+                "href": "https://api.spotify.com/v1/albums/323CkC5IKF9IakoJFSE8Yy",
+                "id": "323CkC5IKF9IakoJFSE8Yy",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/e92c731369da19d5f118f60130cc39c1dadc9a98",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/7c8f2b130257f2dc718505fb5825d508d4dd2614",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ef84b6623469a487156119a35faf8d25b692f849",
+                        "width": 64
+                    }
+                ],
+                "name": "Fall In Line",
+                "release_date": "2018-05-16",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:323CkC5IKF9IakoJFSE8Yy"
+            },
+            {
+                "album_type": "album",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/4OOlG5eBXSkSAAEeKjJb5Y"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/4OOlG5eBXSkSAAEeKjJb5Y",
+                        "id": "4OOlG5eBXSkSAAEeKjJb5Y",
+                        "name": "Courtney Barnett",
+                        "type": "artist",
+                        "uri": "spotify:artist:4OOlG5eBXSkSAAEeKjJb5Y"
+                    }
+                ],
+                "available_markets": [],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/3l7JWewI3ZByxaT5BCgRx2"
+                },
+                "href": "https://api.spotify.com/v1/albums/3l7JWewI3ZByxaT5BCgRx2",
+                "id": "3l7JWewI3ZByxaT5BCgRx2",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/e4dbad15bcc546b4aa878d69fe37464ff7b676b8",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/6f70d100f848c32a6447187b0a9f260e0333796a",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/7418e5d478239ee3a871911480f4256ae13f59f9",
+                        "width": 64
+                    }
+                ],
+                "name": "Tell Me How You Really Feel",
+                "release_date": "2018-05-18",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:3l7JWewI3ZByxaT5BCgRx2"
+            },
+            {
+                "album_type": "single",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/3sDbKMebVH2VYcRSl7u1VC"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/3sDbKMebVH2VYcRSl7u1VC",
+                        "id": "3sDbKMebVH2VYcRSl7u1VC",
+                        "name": "for KING & COUNTRY",
+                        "type": "artist",
+                        "uri": "spotify:artist:3sDbKMebVH2VYcRSl7u1VC"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "BE",
+                    "BG",
+                    "BO",
+                    "BR",
+                    "CA",
+                    "CH",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "DO",
+                    "EC",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GR",
+                    "GT",
+                    "HK",
+                    "HN",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IS",
+                    "IT",
+                    "JP",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MC",
+                    "MT",
+                    "MX",
+                    "MY",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NZ",
+                    "PA",
+                    "PE",
+                    "PH",
+                    "PL",
+                    "PT",
+                    "PY",
+                    "RO",
+                    "SE",
+                    "SG",
+                    "SK",
+                    "SV",
+                    "TH",
+                    "TR",
+                    "TW",
+                    "US",
+                    "UY",
+                    "VN",
+                    "ZA"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/6qHyInMPaaQ8AcXp0ZOKa2"
+                },
+                "href": "https://api.spotify.com/v1/albums/6qHyInMPaaQ8AcXp0ZOKa2",
+                "id": "6qHyInMPaaQ8AcXp0ZOKa2",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/d045ca3c3992c27d8e7e8608901cc6620a3bba50",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/92b93fb3df03ff90f40a83e1386b5343f23e77e7",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/7429989575a515ef95c680c34bbc3f9a2e1bd036",
+                        "width": 64
+                    }
+                ],
+                "name": "joy.",
+                "release_date": "2018-05-18",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:6qHyInMPaaQ8AcXp0ZOKa2"
+            },
+            {
+                "album_type": "album",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/5t28BP42x2axFnqOOMg3CM"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/5t28BP42x2axFnqOOMg3CM",
+                        "id": "5t28BP42x2axFnqOOMg3CM",
+                        "name": "Five Finger Death Punch",
+                        "type": "artist",
+                        "uri": "spotify:artist:5t28BP42x2axFnqOOMg3CM"
+                    }
+                ],
+                "available_markets": [],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/4dMJ8IkkXteoxLIiwTlDTR"
+                },
+                "href": "https://api.spotify.com/v1/albums/4dMJ8IkkXteoxLIiwTlDTR",
+                "id": "4dMJ8IkkXteoxLIiwTlDTR",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/0c6dc799fdf73f6524dd5fa7d5d1c35dbf56eb08",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/779bc9a2039c6fba4883e8e9c31db57bb7102677",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/3649030f02c6206b896b7324c6f07f00c9e4b2ae",
+                        "width": 64
+                    }
+                ],
+                "name": "And Justice for None (Deluxe)",
+                "release_date": "2018-05-18",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:4dMJ8IkkXteoxLIiwTlDTR"
+            }
+        ],
+        "limit": 30,
+        "next": "https://api.spotify.com/v1/browse/new-releases?offset=30&limit=30",
+        "offset": 0,
+        "previous": null,
+        "total": 500
+    }
+}

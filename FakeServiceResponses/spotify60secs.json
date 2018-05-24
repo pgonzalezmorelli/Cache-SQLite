@@ -1,0 +1,501 @@
+{
+    "albums": {
+        "href": "https://api.spotify.com/v1/browse/new-releases?offset=0&limit=30",
+        "items": [
+            {
+                "album_type": "single",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/7uOj7ISCtmaA0BctMszzAw"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/7uOj7ISCtmaA0BctMszzAw",
+                        "id": "7uOj7ISCtmaA0BctMszzAw",
+                        "name": "Brandon Ray",
+                        "type": "artist",
+                        "uri": "spotify:artist:7uOj7ISCtmaA0BctMszzAw"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "BE",
+                    "BG",
+                    "BO",
+                    "BR",
+                    "CA",
+                    "CH",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "DO",
+                    "EC",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GR",
+                    "GT",
+                    "HK",
+                    "HN",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IS",
+                    "IT",
+                    "JP",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MC",
+                    "MT",
+                    "MX",
+                    "MY",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NZ",
+                    "PA",
+                    "PE",
+                    "PH",
+                    "PL",
+                    "PT",
+                    "PY",
+                    "RO",
+                    "SE",
+                    "SG",
+                    "SK",
+                    "SV",
+                    "TH",
+                    "TR",
+                    "TW",
+                    "US",
+                    "UY",
+                    "VN",
+                    "ZA"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/33d2949tMyDbLewQ206zHG"
+                },
+                "href": "https://api.spotify.com/v1/albums/33d2949tMyDbLewQ206zHG",
+                "id": "33d2949tMyDbLewQ206zHG",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/c07f7eb4188f2fecb3c11904b54aa8a55baa2903",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/a9efa1867f37cf0f5a61f730898509e54119033c",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/fc0899f0249eeb9f6aff4af46a1aac50c592cb36",
+                        "width": 64
+                    }
+                ],
+                "name": "Bring Your Love Back",
+                "release_date": "2018-05-18",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:33d2949tMyDbLewQ206zHG"
+            },
+            {
+                "album_type": "single",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/3x8FbPjh2Qz55XMdE2Yalj"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/3x8FbPjh2Qz55XMdE2Yalj",
+                        "id": "3x8FbPjh2Qz55XMdE2Yalj",
+                        "name": "Nick Mulvey",
+                        "type": "artist",
+                        "uri": "spotify:artist:3x8FbPjh2Qz55XMdE2Yalj"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "BE",
+                    "BG",
+                    "BO",
+                    "BR",
+                    "CA",
+                    "CH",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "DO",
+                    "EC",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GR",
+                    "GT",
+                    "HK",
+                    "HN",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IS",
+                    "IT",
+                    "JP",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MC",
+                    "MT",
+                    "MX",
+                    "MY",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NZ",
+                    "PA",
+                    "PE",
+                    "PH",
+                    "PL",
+                    "PT",
+                    "PY",
+                    "RO",
+                    "SE",
+                    "SG",
+                    "SK",
+                    "SV",
+                    "TH",
+                    "TR",
+                    "TW",
+                    "US",
+                    "UY",
+                    "VN",
+                    "ZA"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/7J8GMfGTfVzoSdZsUgt0Bg"
+                },
+                "href": "https://api.spotify.com/v1/albums/7J8GMfGTfVzoSdZsUgt0Bg",
+                "id": "7J8GMfGTfVzoSdZsUgt0Bg",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/3221d72019e59bd1942ffb5d02bff649d5141880",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/385119c00b3636cf779021f88ae3cd79582af6e3",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/25a05d0f2fe14343c6495300b1475131b256d6db",
+                        "width": 64
+                    }
+                ],
+                "name": "Dancing For The Answers - EP",
+                "release_date": "2018-05-18",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:7J8GMfGTfVzoSdZsUgt0Bg"
+            },
+            {
+                "album_type": "single",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/4sTQVOfp9vEMCemLw50sbu"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/4sTQVOfp9vEMCemLw50sbu",
+                        "id": "4sTQVOfp9vEMCemLw50sbu",
+                        "name": "Galantis",
+                        "type": "artist",
+                        "uri": "spotify:artist:4sTQVOfp9vEMCemLw50sbu"
+                    },
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/2s6lxOYvvCvzpHtd3VyuMj"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/2s6lxOYvvCvzpHtd3VyuMj",
+                        "id": "2s6lxOYvvCvzpHtd3VyuMj",
+                        "name": "Uffie",
+                        "type": "artist",
+                        "uri": "spotify:artist:2s6lxOYvvCvzpHtd3VyuMj"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "BE",
+                    "BG",
+                    "BO",
+                    "BR",
+                    "CA",
+                    "CH",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "DO",
+                    "EC",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GR",
+                    "GT",
+                    "HK",
+                    "HN",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IS",
+                    "IT",
+                    "JP",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MC",
+                    "MT",
+                    "MX",
+                    "MY",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NZ",
+                    "PA",
+                    "PE",
+                    "PH",
+                    "PL",
+                    "PT",
+                    "PY",
+                    "RO",
+                    "SE",
+                    "SG",
+                    "SK",
+                    "SV",
+                    "TH",
+                    "TR",
+                    "TW",
+                    "US",
+                    "UY",
+                    "VN",
+                    "ZA"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/62DGTGmwPat1TZksLeVu0m"
+                },
+                "href": "https://api.spotify.com/v1/albums/62DGTGmwPat1TZksLeVu0m",
+                "id": "62DGTGmwPat1TZksLeVu0m",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/78d9080762be5387c1e0a0929169513ccdbf4a69",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/86abc6e6fa2fdbecf2796c352f1f70d4f104bfdd",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/de13f05b28c34f72d675871ed50e8599f38673c7",
+                        "width": 64
+                    }
+                ],
+                "name": "Spaceship (feat. Uffie)",
+                "release_date": "2018-05-17",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:62DGTGmwPat1TZksLeVu0m"
+            },
+            {
+                "album_type": "album",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/2SNzxY1OsSCHBLVi77mpPQ"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/2SNzxY1OsSCHBLVi77mpPQ",
+                        "id": "2SNzxY1OsSCHBLVi77mpPQ",
+                        "name": "Joe Bonamassa",
+                        "type": "artist",
+                        "uri": "spotify:artist:2SNzxY1OsSCHBLVi77mpPQ"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "BE",
+                    "BG",
+                    "BO",
+                    "BR",
+                    "CA",
+                    "CH",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "DO",
+                    "EC",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GR",
+                    "GT",
+                    "HK",
+                    "HN",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IS",
+                    "IT",
+                    "JP",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MC",
+                    "MT",
+                    "MX",
+                    "MY",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NZ",
+                    "PA",
+                    "PE",
+                    "PH",
+                    "PL",
+                    "PT",
+                    "PY",
+                    "RO",
+                    "SE",
+                    "SG",
+                    "SK",
+                    "SV",
+                    "TH",
+                    "TR",
+                    "TW",
+                    "US",
+                    "UY",
+                    "VN",
+                    "ZA"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/6wQ0Qd9cQZvOYE4Fn1OIZc"
+                },
+                "href": "https://api.spotify.com/v1/albums/6wQ0Qd9cQZvOYE4Fn1OIZc",
+                "id": "6wQ0Qd9cQZvOYE4Fn1OIZc",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/d9b1ef9069cebfbb499637abb7df556c2d8a415a",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/0b8eca8ecc907dc58fbdacbc6ac6b58aca88b805",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/0e963f1e55927d92603355dec522a5f80c8e899c",
+                        "width": 64
+                    }
+                ],
+                "name": "British Blues Explosion Live",
+                "release_date": "2018-05-18",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:6wQ0Qd9cQZvOYE4Fn1OIZc"
+            },
+            {
+                "album_type": "single",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/0t3QQl52F463sxGXb1ckhB"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/0t3QQl52F463sxGXb1ckhB",
+                        "id": "0t3QQl52F463sxGXb1ckhB",
+                        "name": "Betty Who",
+                        "type": "artist",
+                        "uri": "spotify:artist:0t3QQl52F463sxGXb1ckhB"
+                    }
+                ],
+                "available_markets": [],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/2eRF8MABSmNWdu5dSxp9aN"
+                },
+                "href": "https://api.spotify.com/v1/albums/2eRF8MABSmNWdu5dSxp9aN",
+                "id": "2eRF8MABSmNWdu5dSxp9aN",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/cb3d36541dc4439957a52d31938a5f7f350ab7c1",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/cd765e56945170a61eb05d8cc6bd982a856ddbb2",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/582897972f36f83e32588faba537789bafa3ceff",
+                        "width": 64
+                    }
+                ],
+                "name": "Taste",
+                "release_date": "2018-05-18",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:2eRF8MABSmNWdu5dSxp9aN"
+            }
+        ],
+        "limit": 30,
+        "next": "https://api.spotify.com/v1/browse/new-releases?offset=30&limit=30",
+        "offset": 0,
+        "previous": null,
+        "total": 500
+    }
+}
