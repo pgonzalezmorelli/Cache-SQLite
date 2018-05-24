@@ -1,31 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CacheSQLite.Views.HomeView" xmlns:controls="clr-namespace:CacheSQLite.Controls;assembly=Cache-SQLite" BackgroundColor="Black">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="CacheSQLite.Views.HomeView" BackgroundColor="Black">
     <ContentPage.Content>
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*">
-                </RowDefinition>
-                <RowDefinition Height="50">
-                </RowDefinition>
-            </Grid.RowDefinitions>
-            <ScrollView Grid.Row="0">
-                <controls:Repeater x:Name="repeater" Spacing="16" ItemsSource="{Binding Albums}">
-                    <controls:Repeater.ItemTemplate>
-                        <DataTemplate>
-                            <StackLayout>
-                                <Label Text="{Binding name}">
-                                </Label>
-                                <Image Source="{Binding images[0].url}">
-                                </Image>
-                            </StackLayout>
-                        </DataTemplate>
-                    </controls:Repeater.ItemTemplate>
-                </controls:Repeater>
-            </ScrollView>
-            <StackLayout Grid.Row="1" x:Name="Footer">
-                <Button Text="Reload" BackgroundColor="LimeGreen" TextColor="White" Margin="50,0" Command="{Binding ReloadCommand}">
-                </Button>
-            </StackLayout>
-        </Grid>
+        <Button Clicked="Handle_Clicked" Image="https://static.vix.com/es/sites/default/files/styles/large/public/btg/tech.batanga.com/files/Spotify-llega-a-America-Latina-todo-sobre-su-sistema-de-musica-online-1.jpg?itok=tbQN3YtZ" WidthRequest="100" HeightRequest="50" Text="Go to Spotify"/>
     </ContentPage.Content>
 </ContentPage>

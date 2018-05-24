@@ -10,7 +10,7 @@ using Xamarin.Forms;
 
 namespace CacheSQLite.ViewModels
 {
-    public class HomeViewModel : BindableObject, INotifyPropertyChanged
+    public class SpotifyViewModel : BindableObject, INotifyPropertyChanged
     {
         #region Property change
         public event PropertyChangedEventHandler PropertyChanged = delegate { };
@@ -21,9 +21,24 @@ namespace CacheSQLite.ViewModels
         #endregion
 
         private IEnumerable<Item> albums = new List<Item>();
+        private bool isBusy;
+
         public ICommand ReloadCommand {
             get{
                 return new Command(async () => await ReloadAlbums());
+            }
+        }
+
+        public bool IsBusy
+        {
+            get
+            {
+                return this.isBusy;
+            }
+            set
+            {
+                this.isBusy = value;
+                this.RaisePropertyChanged();
             }
         }
 
@@ -40,11 +55,14 @@ namespace CacheSQLite.ViewModels
             }
         }
 
-        public HomeViewModel()
+        public SpotifyViewModel()
         {
+            
             Task.Run(async () =>
             {
+                IsBusy = true;
                 Albums = await  LoadAlbums();
+                IsBusy = false;
             });
         }
 
@@ -56,7 +74,9 @@ namespace CacheSQLite.ViewModels
 
         private async Task ReloadAlbums()
         {
+            IsBusy = true;
             Albums = await LoadAlbums();
+            IsBusy = false;
         }
     }
 }

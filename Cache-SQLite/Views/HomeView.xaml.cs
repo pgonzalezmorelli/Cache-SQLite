@@ -11,8 +11,12 @@ namespace CacheSQLite.Views
     {
         public HomeView()
         {
-            BindingContext = new HomeViewModel();
             InitializeComponent();
+        }
+
+        void Handle_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new SpotifyView());
         }
     }
 }

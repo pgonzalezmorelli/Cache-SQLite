@@ -21,7 +21,7 @@ namespace CacheSQLite.Services
             var response = await client.GetAsync(url);
 
             var content = await response.Content.ReadAsStringAsync();
-
+            await Task.Delay(5000);
             return JsonConvert.DeserializeObject<SpotifyAlbums>(content);
 
         }
