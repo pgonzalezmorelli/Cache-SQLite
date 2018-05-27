@@ -12,7 +12,7 @@ namespace CacheSQLite.Repositories
 
         public CacheRepository(IDatabase<Cache> db = null)
         {
-            database = db ?? DependencyService.Get<IDatabase<Cache>>();
+            database = db ?? new Database<Cache>();
         }
 
         public async Task<Cache> GetCache(Cache cache)
@@ -23,7 +23,7 @@ namespace CacheSQLite.Repositories
                 var list = await database.Select(selectQuery);
                 return list.FirstOrDefault();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return new Cache();
             }
@@ -31,9 +31,8 @@ namespace CacheSQLite.Repositories
 
         public async Task AddCache(Cache cache)
         {
-            //cache.Id = Guid.NewGuid();
+            cache.Id = Guid.NewGuid();
             var res = await database.Insert(cache);
-            //if (res == 0) throw new RepositoryException(Messages.Platform.RepositoryException);
         }
 
         public async Task UpdateCache(Cache cache)

@@ -1,31 +1,40 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using CacheSQLite.Managers;
 using CacheSQLite.Models;
-using CacheSQLite.Services;
 using Xamarin.Forms;
 
 namespace CacheSQLite.ViewModels
 {
     public class SpotifyViewModel : BindableObject, INotifyPropertyChanged
     {
-        #region Property change
-        public event PropertyChangedEventHandler PropertyChanged = delegate { };
+        #region PropertyChanged
+
+        public new event PropertyChangedEventHandler PropertyChanged = delegate { };
+
         protected void RaisePropertyChanged([CallerMemberName] string propertyName = "")
         {
             this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
         }
+
         #endregion
 
-        private IEnumerable<Item> albums = new List<Item>();
-        private bool isBusy;
+        #region Attributes & Properties
 
-        public ICommand ReloadCommand {
-            get{
-                return new Command(async () => await ReloadAlbums());
+        private readonly ISpotifyManager manager;
+        private ObservableCollection<Item> albums = new ObservableCollection<Item>();
+        private bool isBusy;
+        private bool isUpdating;
+
+        public ICommand ReloadCommand
+        {
+            get
+            {
+                return new Command(async () => await GetAlbumsAsync());
             }
         }
 
@@ -42,7 +51,20 @@ namespace CacheSQLite.ViewModels
             }
         }
 
-        public IEnumerable<Item> Albums
+        public bool IsUpdating
+        {
+            get
+            {
+                return this.isUpdating;
+            }
+            set
+            {
+                this.isUpdating = value;
+                this.RaisePropertyChanged();
+            }
+        }
+
+        public ObservableCollection<Item> Albums
         {
             get
             {
@@ -55,28 +77,54 @@ namespace CacheSQLite.ViewModels
             }
         }
 
-        public SpotifyViewModel()
+        #endregion
+
+        public SpotifyViewModel(ISpotifyManager manager = null)
         {
-            
-            Task.Run(async () =>
-            {
-                IsBusy = true;
-                Albums = await  LoadAlbums();
-                IsBusy = false;
-            });
+            this.manager = manager ?? new SpotifyManager();
+
+            GetAlbumsAsync();
         }
 
-        private async Task<List<Item>> LoadAlbums(){
-            SpotifyService s = new SpotifyService();
-            var list = await s.GetAlbums();
-            return (List<Item>)list.albums.items;
-        }
-
-        private async Task ReloadAlbums()
+        private Task LoadAlbumsAsync()
         {
             IsBusy = true;
-            Albums = await LoadAlbums();
+            return GetAlbumsAsync();
+        }
+
+        private async Task GetAlbumsAsync()
+        {
+            var result = await manager.GetAlbumsAsync(SetAlbumsAsync);
+            if (result != null && result.Data != null)
+            {
+                // Cached response
+                Albums = new ObservableCollection<Item>(result.Data.albums.items);
+                IsBusy = false;
+                IsUpdating = true;
+            }
+            else
+            {
+                // Waiting for service response
+                IsBusy = true;
+            }
+        }
+
+        private Task SetAlbumsAsync(Cached<SpotifyAlbums> result, Exception exception)
+        {
+            // Result from service
+            if (exception != null)
+                throw exception;
+
+            if (result != null && result.Data != null)
+            {
+                Albums = new ObservableCollection<Item>(result.Data.albums.items);
+                IsBusy = false;
+            }
+
             IsBusy = false;
+            IsUpdating = false;
+
+            return Task.FromResult(false);
         }
     }
 }

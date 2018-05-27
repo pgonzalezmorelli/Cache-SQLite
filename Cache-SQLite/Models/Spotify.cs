@@ -52,7 +52,7 @@ namespace CacheSQLite.Models
         public int total { get; set; }
     }
 
-    public class SpotifyAlbums
+    public class SpotifyAlbums : Cacheable
     {
         public Albums albums { get; set; }
     }

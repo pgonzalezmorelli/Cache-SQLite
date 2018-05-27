@@ -11,17 +11,12 @@ namespace CacheSQLite.Repositories
     public class Database<T> : IDatabase<T> where T : EntityBase, new()
     {
         private IDatabaseConnection databaseConnection;
-        //private ISettings appSettings;
         protected SQLiteAsyncConnection database;
 
         public Database(IDatabaseConnection databaseConn = null)
         {
-            //ISettings settings = null
-
-
             databaseConnection = databaseConn ?? DependencyService.Get<IDatabaseConnection>();
-            //appSettings = settings ?? DependencyContainer.Resolve<ISettings>();
-            //database = databaseConnection.GetConnection(appSettings.Database.FileName);
+            database = databaseConnection.GetConnection("cache-sqlite_db.db3");
             InitDatabase();
         }
 

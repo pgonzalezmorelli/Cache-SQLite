@@ -2,18 +2,19 @@
 
 namespace CacheSQLite.Models
 {
-    public class Result<T>
+    public class Cached<T>
     {
+        #region Attributes & Properties
+
         public T Data { get; set; }
+
         public DateTime LastModification { get; set; }
 
-        public Result(T data)
-        {
-            Data = data;
-            LastModification = DateTime.Now;
-        }
+        #endregion
 
-        public Result(T data, DateTime lastModification)
+        public Cached(T data) : this(data, DateTime.Now) { }
+
+        public Cached(T data, DateTime lastModification)
         {
             Data = data;
             LastModification = lastModification;

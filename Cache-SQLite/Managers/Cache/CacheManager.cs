@@ -6,29 +6,32 @@ using Newtonsoft.Json;
 
 namespace CacheSQLite.Managers
 {
-    public class CacheManager
+    public class CacheManager : ICacheManager
     {
+        #region Attributes & Properties
+
         private readonly ICacheRepository cacheRepository;
 
-        public CacheManager(ICacheRepository cacheRepository)
+        #endregion
+
+        public CacheManager(ICacheRepository cacheRepository = null)
         {
-            this.cacheRepository = cacheRepository;
+            this.cacheRepository = cacheRepository ?? new CacheRepository();
         }
 
-        public async Task<CacheResponse<T>> GetCacheAsync<T>() where T : EntityBase
+        public async Task<CachedResponse<T>> GetAsync<T>() where T : Cacheable
         {
             var cachedObject = await cacheRepository.GetCache(new Cache(typeof(T).Name));
             if (cachedObject != null)
             {
-                var obj = JsonConvert.DeserializeObject<T>(cachedObject.Data);
-                return new CacheResponse<T>(obj, cachedObject.Updated);
+                var obj = cachedObject.Data != null ? JsonConvert.DeserializeObject<T>(cachedObject.Data) : null;
+                return new CachedResponse<T>(obj, cachedObject.Updated);
             }
             return null;
         }
 
-        public async Task AddOrUpdateCacheAsync<T>(T entity)
+        public async Task PutAsync<T>(T entity) where T : Cacheable
         {
-
             var storedCache = await cacheRepository.GetCache(GetNewCache<T>());
             if (storedCache != null)
             {
@@ -39,12 +42,18 @@ namespace CacheSQLite.Managers
                 await cacheRepository.AddCache(GetNewCache<T>(entity));
         }
 
-        public async Task Clean()
+        public Task RemoveAsync<T>(T entity) where T : Cacheable
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task RemoveAll()
         {
             await cacheRepository.RemoveAll();
         }
 
         #region Utilities
+
         private void ReplaceData<T>(ref Cache cache, T entity)
         {
             var json = JsonConvert.SerializeObject(entity);
@@ -62,6 +71,7 @@ namespace CacheSQLite.Managers
         {
             return new Cache(typeof(T).Name);
         }
+
         #endregion
     }
 }

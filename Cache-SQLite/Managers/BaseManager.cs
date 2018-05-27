@@ -12,27 +12,27 @@ namespace CacheSQLite.Managers
 
         #endregion
 
-        public BaseManager(ICacheManager cacheManager)
+        public BaseManager(ICacheManager cacheManager = null)
         {
-            this.cacheManager = cacheManager;
+            this.cacheManager = cacheManager ?? new CacheManager();
         }
 
-        public virtual async Task<Result<T>> GetFromCacheAsync<T>(Func<Task<T>> serviceCall, Func<Result<T>, Exception, Task> onUpdate) where T : EntityBase
+        public virtual async Task<Cached<T>> GetFromCacheAsync<T>(Func<Task<T>> serviceCall, Func<Cached<T>, Exception, Task> onUpdate) where T : Cacheable
         {
-            var cachedResponse = await cacheManager.GetCacheAsync<T>();
+            var cachedResponse = await cacheManager.GetAsync<T>();
 
-            Result<T> cachedData = new Result<T>(null);
+            Cached<T> cachedData = new Cached<T>(null);
 
             if (cachedResponse != null)
             {
-                cachedData = new Result<T>(cachedResponse.Object, cachedResponse.Updated);
+                cachedData = new Cached<T>(cachedResponse.Object, cachedResponse.Updated.Value);
             }
             GetFromService(serviceCall, onUpdate, cachedData);
 
             return await Task.FromResult(cachedData);
         }
 
-        public virtual void GetFromService<T>(Func<Task<T>> serviceCall, Func<Result<T>, Exception, Task> onUpdate, Result<T> cachedData) where T : EntityBase
+        public virtual void GetFromService<T>(Func<Task<T>> serviceCall, Func<Cached<T>, Exception, Task> onUpdate, Cached<T> cachedData) where T : Cacheable
         {
             Task.Run(async () =>
             {
@@ -41,9 +41,9 @@ namespace CacheSQLite.Managers
                     var result = await serviceCall();
                     if (result != null)
                     {
-                        await cacheManager.AddOrUpdateCacheAsync<T>(result);
+                        await cacheManager.PutAsync(result);
                     }
-                    await onUpdate(new Result<T>(result), null);
+                    await onUpdate(new Cached<T>(result), null);
                 }
                 catch (Exception ex)
                 {

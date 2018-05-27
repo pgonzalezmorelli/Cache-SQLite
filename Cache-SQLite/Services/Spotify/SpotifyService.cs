@@ -6,13 +6,9 @@ using Newtonsoft.Json;
 
 namespace CacheSQLite.Services
 {
-    public class SpotifyService
+    public class SpotifyService : ISpotifyService
     {
-        public SpotifyService()
-        {
-        }
-
-        public async Task<SpotifyAlbums> GetAlbums()
+        public async Task<SpotifyAlbums> GetAlbumsAsync()
         {
             HttpClient client = new HttpClient();
             string fileIndex = string.Empty;

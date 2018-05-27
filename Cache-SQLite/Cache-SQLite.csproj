@@ -45,19 +45,15 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Managers\BaseManager.cs" />
-    <Compile Include="Managers\CacheManager\ICacheManager.cs" />
-    <Compile Include="Managers\CacheManager\CacheManager.cs" />
-    <Compile Include="Models\Cache.cs" />
-    <Compile Include="Models\CacheResponse.cs" />
+    <Compile Include="Managers\Cache\ICacheManager.cs" />
+    <Compile Include="Managers\Cache\CacheManager.cs" />
     <Compile Include="Models\EntityBase.cs" />
     <Compile Include="Repositories\Cache\CacheRepository.cs" />
     <Compile Include="Repositories\Cache\ICacheRepository.cs" />
     <Compile Include="Repositories\Database\Database.cs" />
     <Compile Include="Repositories\Database\IDatabase.cs" />
     <Compile Include="Repositories\Database\IDatabaseConnection.cs" />
-    <Compile Include="Models\Result.cs" />
     <Compile Include="Models\Spotify.cs" />
-    <Compile Include="Services\SpotifyService.cs" />
     <Compile Include="Views\HomeView.xaml.cs">
       <DependentUpon>HomeView.xaml</DependentUpon>
     </Compile>
@@ -67,6 +63,13 @@
     <Compile Include="Views\SpotifyView.xaml.cs">
       <DependentUpon>SpotifyView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Managers\Spotify\ISpotifyManager.cs" />
+    <Compile Include="Managers\Spotify\SpotifyManager.cs" />
+    <Compile Include="Services\Spotify\ISpotifyService.cs" />
+    <Compile Include="Services\Spotify\SpotifyService.cs" />
+    <Compile Include="Models\Cache\Cache.cs" />
+    <Compile Include="Models\Cache\Cacheable.cs" />
+    <Compile Include="Models\Cache\Cached.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SQLitePCLRaw.core">
@@ -102,13 +105,16 @@
     <Folder Include="ViewModels\" />
     <Folder Include="Views\" />
     <Folder Include="Services\" />
-    <Folder Include="Managers\CacheManager\" />
+    <Folder Include="Managers\Cache\" />
     <Folder Include="Models\" />
     <Folder Include="Repositories\" />
     <Folder Include="Repositories\Cache\" />
     <Folder Include="Repositories\Database\" />
     <Folder Include="Controls\" />
     <Folder Include="Converters\" />
+    <Folder Include="Managers\Spotify\" />
+    <Folder Include="Services\Spotify\" />
+    <Folder Include="Models\Cache\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.3.0.0.482510\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.3.0.0.482510\build\netstandard1.0\Xamarin.Forms.targets')" />
