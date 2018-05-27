@@ -8,7 +8,7 @@ namespace CacheSQLite.Models
 
         public T Data { get; set; }
 
-        public DateTime LastModification { get; set; }
+        public DateTime? LastModification { get; set; }
 
         #endregion
 
@@ -22,28 +22,30 @@ namespace CacheSQLite.Models
 
         public string LastModificationDescription()
         {
-            var prefix = "Actualizado hace";
+            if (!LastModification.HasValue) return null;
+
+            var prefix = "Updated";
 
             var now = DateTime.Now;
-            var minutes = (now - LastModification).Minutes;
-            var hours = (now - LastModification).Hours;
-            var days = (now - LastModification).Days;
+            var minutes = (now - LastModification.Value).Minutes;
+            var hours = (now - LastModification.Value).Hours;
+            var days = (now - LastModification.Value).Days;
 
             if (minutes < 1)
             {
-                return $"{prefix} menos de un minuto";
+                return $"{prefix} less than a minute ago";
             }
             else if (minutes < 60)
             {
-                return $"{prefix} {minutes} minutos";
+                return $"{prefix} {minutes} minutes ago";
             }
             else if (hours < 24)
             {
-                return $"{prefix} {hours} horas";
+                return $"{prefix} {hours} hours ago";
             }
             else
             {
-                return $"{prefix} {days} días";
+                return $"{prefix} {days} days ago";
             }
         }
     }

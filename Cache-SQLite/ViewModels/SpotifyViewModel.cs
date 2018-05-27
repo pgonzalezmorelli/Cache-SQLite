@@ -29,6 +29,7 @@ namespace CacheSQLite.ViewModels
         private ObservableCollection<Item> albums = new ObservableCollection<Item>();
         private bool isBusy;
         private bool isUpdating;
+        private string lastUpdate = string.Empty;
 
         public ICommand ReloadCommand
         {
@@ -77,6 +78,19 @@ namespace CacheSQLite.ViewModels
             }
         }
 
+        public string LastUpdate
+        {
+            get
+            {
+                return this.lastUpdate;
+            }
+            set
+            {
+                this.lastUpdate = value;
+                this.RaisePropertyChanged();
+            }
+        }
+
         #endregion
 
         public SpotifyViewModel(ISpotifyManager manager = null)
@@ -119,6 +133,11 @@ namespace CacheSQLite.ViewModels
             {
                 Albums = new ObservableCollection<Item>(result.Data.albums.items);
                 IsBusy = false;
+            }
+
+            if (result != null)
+            {
+                LastUpdate = result.LastModificationDescription();
             }
 
             IsBusy = false;

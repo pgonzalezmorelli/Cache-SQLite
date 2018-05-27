@@ -29,6 +29,13 @@
             <Setter Property="TextColor" Value="LimeGreen" />
         </Style>
         
+        <Style x:Key="Reload" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="LimeGreen" />
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="Margin" Value="0" />
+        </Style>
+        
     </ContentPage.Resources>
     <ContentPage.Content>
         <Grid>
@@ -53,6 +60,7 @@
                     <ActivityIndicator />
                     <Label Style="{StaticResource IndicatorText}" Text="Updating..." />
                 </StackLayout>
+                <Label Grid.Row="0" Style="{StaticResource IndicatorText}" Text="{Binding LastUpdate}" HorizontalOptions="Center" IsVisible="{Binding IsUpdating, Converter={StaticResource not}}" />
                 <ScrollView  Grid.Row="1" IsVisible="{Binding IsBusy, Converter={StaticResource not}}">
                     <controls:Repeater Grid.Row="1" x:Name="repeater" Spacing="16" ItemsSource="{Binding Albums}">
                         <controls:Repeater.ItemTemplate>
@@ -73,9 +81,8 @@
                     </controls:Repeater>
                 </ScrollView>
             </Grid>
-            <StackLayout Grid.Row="2" x:Name="Footer">
-                <Button Text="Reload" BackgroundColor="LimeGreen" TextColor="Black" FontSize="20" Margin="50,0" Command="{Binding ReloadCommand}">
-                </Button>
+            <StackLayout Grid.Row="2" Padding="0" x:Name="Footer">
+                <Button Style="{StaticResource Reload}" Text="Reload" Command="{Binding ReloadCommand}" />
             </StackLayout>
         </Grid>
     </ContentPage.Content>
