@@ -8,7 +8,7 @@ namespace CacheSQLite
         public App()
         {
             InitializeComponent();
-            MainPage = new NavigationPage(new HomeView());
+            MainPage = new NavigationPage(new HomeView()) { BarBackgroundColor = Color.Black };
         }
 
         protected override void OnStart()

@@ -21,17 +21,21 @@ namespace CacheSQLite.Managers
         {
             var cachedResponse = await cacheManager.GetAsync<T>();
 
-            Cached<T> cachedData = new Cached<T>(null);
+            Cached<T> data;
 
             if (cachedResponse != null)
             {
-                cachedData = new Cached<T>(cachedResponse.Object, cachedResponse.Updated.Value);
+                data = new Cached<T>(cachedResponse.Object, cachedResponse.Updated.Value);
+            }else{
+                data = new Cached<T>();
             }
-            GetFromService(serviceCall, onUpdate, cachedData);
+            GetFromService(serviceCall, onUpdate, data);
 
-            return await Task.FromResult(cachedData);
+            return await Task.FromResult(data);
         }
 
+
+        // Invoke Callback //
         public virtual void GetFromService<T>(Func<Task<T>> serviceCall, Func<Cached<T>, Exception, Task> onUpdate, Cached<T> cachedData) where T : Cacheable
         {
             Task.Run(async () =>

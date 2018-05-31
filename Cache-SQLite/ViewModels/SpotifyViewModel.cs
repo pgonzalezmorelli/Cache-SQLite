@@ -26,7 +26,7 @@ namespace CacheSQLite.ViewModels
         #region Attributes & Properties
 
         private readonly ISpotifyManager manager;
-        private ObservableCollection<Item> albums = new ObservableCollection<Item>();
+        private ObservableCollection<UIItems> pairedAlbums = new ObservableCollection<UIItems>();
         private bool isBusy;
         private bool isUpdating;
         private string lastUpdate = string.Empty;
@@ -65,15 +65,15 @@ namespace CacheSQLite.ViewModels
             }
         }
 
-        public ObservableCollection<Item> Albums
+        public ObservableCollection<UIItems> PairedAlbums
         {
             get
             {
-                return this.albums;
+                return this.pairedAlbums;
             }
             set
             {
-                this.albums = value;
+                this.pairedAlbums = value;
                 this.RaisePropertyChanged();
             }
         }
@@ -112,7 +112,8 @@ namespace CacheSQLite.ViewModels
             if (result != null && result.Data != null)
             {
                 // Cached response
-                Albums = new ObservableCollection<Item>(result.Data.albums.items);
+                var newPairedItems = Utilities.GetUIItemsList(result.Data.albums.items);
+                PairedAlbums =  new ObservableCollection<UIItems>(newPairedItems.items);
                 IsBusy = false;
                 IsUpdating = true;
             }
@@ -123,6 +124,8 @@ namespace CacheSQLite.ViewModels
             }
         }
 
+
+        // Callback function //
         private Task SetAlbumsAsync(Cached<SpotifyAlbums> result, Exception exception)
         {
             // Result from service
@@ -131,7 +134,8 @@ namespace CacheSQLite.ViewModels
 
             if (result != null && result.Data != null)
             {
-                Albums = new ObservableCollection<Item>(result.Data.albums.items);
+                var newPairedItems = Utilities.GetUIItemsList(result.Data.albums.items);
+                PairedAlbums = new ObservableCollection<UIItems>(newPairedItems.items);
                 IsBusy = false;
             }
 

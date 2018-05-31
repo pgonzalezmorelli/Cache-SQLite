@@ -70,6 +70,7 @@
     <Compile Include="Models\Cache\Cache.cs" />
     <Compile Include="Models\Cache\Cacheable.cs" />
     <Compile Include="Models\Cache\Cached.cs" />
+    <Compile Include="Converters\StringNullOrEmptyBoolConverter.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SQLitePCLRaw.core">

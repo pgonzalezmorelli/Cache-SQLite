@@ -2,7 +2,7 @@
 
 namespace CacheSQLite.Models
 {
-    public class Cached<T>
+    public class Cached<T> where T : Cacheable
     {
         #region Attributes & Properties
 
@@ -11,6 +11,8 @@ namespace CacheSQLite.Models
         public DateTime? LastModification { get; set; }
 
         #endregion
+
+        public Cached() : this(null, DateTime.Now) { }
 
         public Cached(T data) : this(data, DateTime.Now) { }
 

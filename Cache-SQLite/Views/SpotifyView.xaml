@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             x:Class="CacheSQLite.Views.SpotifyView" xmlns:controls="clr-namespace:CacheSQLite.Controls;assembly=Cache-SQLite" 
-             xmlns:converters="clr-namespace:CacheSQLite.Converters;assembly=Cache-SQLite" 
-             BackgroundColor="Black">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CacheSQLite.Views.SpotifyView" xmlns:controls="clr-namespace:CacheSQLite.Controls;assembly=Cache-SQLite" xmlns:converters="clr-namespace:CacheSQLite.Converters;assembly=Cache-SQLite" BackgroundColor="Black">
     <ContentPage.Resources>
         <converters:BooleanNegationConverter x:Key="not" />
-
+        <converters:NullBoolConverter x:Key="nullBoolConverter" />
         <Style TargetType="Label">
             <Setter Property="TextColor" Value="LightGray" />
             <Setter Property="FontSize" Value="12" />
         </Style>
-
         <Style x:Key="IndicatorContainer" TargetType="StackLayout">
             <Setter Property="Orientation" Value="Horizontal" />
             <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
@@ -18,24 +14,20 @@
             <Setter Property="Padding" Value="16" />
             <Setter Property="Spacing" Value="16" />
         </Style>
-        
         <Style TargetType="ActivityIndicator">
             <Setter Property="Scale" Value="1.5" />
             <Setter Property="Color" Value="LimeGreen" />
             <Setter Property="IsRunning" Value="true" />
         </Style>
-
         <Style x:Key="IndicatorText" TargetType="Label">
             <Setter Property="TextColor" Value="LimeGreen" />
         </Style>
-        
         <Style x:Key="Reload" TargetType="Button">
             <Setter Property="BackgroundColor" Value="LimeGreen" />
             <Setter Property="TextColor" Value="Black" />
             <Setter Property="FontSize" Value="18" />
-            <Setter Property="Margin" Value="0" />
+            <Setter Property="Margin" Value="0,0,0,16" />
         </Style>
-        
     </ContentPage.Resources>
     <ContentPage.Content>
         <Grid>
@@ -61,21 +53,46 @@
                     <Label Style="{StaticResource IndicatorText}" Text="Updating..." />
                 </StackLayout>
                 <Label Grid.Row="0" Style="{StaticResource IndicatorText}" Text="{Binding LastUpdate}" HorizontalOptions="Center" IsVisible="{Binding IsUpdating, Converter={StaticResource not}}" />
-                <ScrollView  Grid.Row="1" IsVisible="{Binding IsBusy, Converter={StaticResource not}}">
-                    <controls:Repeater Grid.Row="1" x:Name="repeater" Spacing="16" ItemsSource="{Binding Albums}">
+                <ScrollView Grid.Row="1" IsVisible="{Binding IsBusy, Converter={StaticResource not}}">
+                    <controls:Repeater Grid.Row="1" x:Name="repeater" Spacing="16" ItemsSource="{Binding PairedAlbums}">
                         <controls:Repeater.ItemTemplate>
                             <DataTemplate>
-                                <StackLayout Margin="30">
-                                    <StackLayout Orientation="Horizontal">
-                                        <Label Text="Name" />
-                                        <Label Text="{Binding name}" />
+                                <Grid Margin="10,20">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="200" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <!--Item 1-->
+                                    <StackLayout Grid.Row="0" Grid.Column="0" Spacing="0">
+                                        <Image Source="{Binding Item1.images[0].url}" />
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="{Binding Item1.artists[0].name}"  FontAttributes="Bold"/>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="{Binding Item1.name}"/>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="{Binding Item1.release_date}" />
+                                        </StackLayout>
                                     </StackLayout>
-                                    <StackLayout Orientation="Horizontal">
-                                        <Label Text="Release date" />
-                                        <Label Text="{Binding release_date}" />
+                                    <!--Item 2-->
+                                    <StackLayout Grid.Row="0" Grid.Column="1" Spacing="0" IsVisible="{Binding Item2,
+                                           Converter={StaticResource nullBoolConverter}}">
+                                        <Image Source="{Binding Item2.images[0].url}" />
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="{Binding Item2.artists[0].name}"  FontAttributes="Bold"/>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="{Binding Item2.name}"/>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="{Binding Item2.release_date}" />
+                                        </StackLayout>
                                     </StackLayout>
-                                    <Image Source="{Binding images[0].url}" />
-                                </StackLayout>
+                                </Grid>
                             </DataTemplate>
                         </controls:Repeater.ItemTemplate>
                     </controls:Repeater>

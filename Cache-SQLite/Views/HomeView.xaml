@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             x:Class="CacheSQLite.Views.HomeView" BackgroundColor="Black">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CacheSQLite.Views.HomeView" BackgroundColor="Black">
     <ContentPage.Content>
-        <Button Clicked="Handle_Clicked" Image="https://static.vix.com/es/sites/default/files/styles/large/public/btg/tech.batanga.com/files/Spotify-llega-a-America-Latina-todo-sobre-su-sistema-de-musica-online-1.jpg?itok=tbQN3YtZ" WidthRequest="100" HeightRequest="50" Text="Go to Spotify"/>
+        <StackLayout>
+            <Button Clicked="Handle_Clicked" Margin="30,0" VerticalOptions="CenterAndExpand" WidthRequest="150" HeightRequest="50" Text="Go to Spotify" BackgroundColor="Lime" TextColor="Black" />
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
