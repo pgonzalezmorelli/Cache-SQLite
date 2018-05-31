@@ -556,6 +556,234 @@
                 "release_date_precision": "day",
                 "type": "album",
                 "uri": "spotify:album:2jJfnAZE6IG3oYnUv2eCj4"
+            },
+            {
+                "album_type": "single",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/7i9j813KFoSBMldGqlh2Z1"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/7i9j813KFoSBMldGqlh2Z1",
+                        "id": "7i9j813KFoSBMldGqlh2Z1",
+                        "name": "Riton",
+                        "type": "artist",
+                        "uri": "spotify:artist:7i9j813KFoSBMldGqlh2Z1"
+                    },
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/59iOp415oyqGlBHyAhu4z3"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/59iOp415oyqGlBHyAhu4z3",
+                        "id": "59iOp415oyqGlBHyAhu4z3",
+                        "name": "Kah-Lo",
+                        "type": "artist",
+                        "uri": "spotify:artist:59iOp415oyqGlBHyAhu4z3"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "BE",
+                    "BG",
+                    "BO",
+                    "BR",
+                    "CA",
+                    "CH",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "DO",
+                    "EC",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GR",
+                    "GT",
+                    "HK",
+                    "HN",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IS",
+                    "IT",
+                    "JP",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MC",
+                    "MT",
+                    "MX",
+                    "MY",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NZ",
+                    "PA",
+                    "PE",
+                    "PH",
+                    "PL",
+                    "PT",
+                    "PY",
+                    "RO",
+                    "SE",
+                    "SG",
+                    "SK",
+                    "SV",
+                    "TH",
+                    "TR",
+                    "TW",
+                    "US",
+                    "UY",
+                    "VN",
+                    "ZA"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/7lCa8DnB02s8GHy26QqvOw"
+                },
+                "href": "https://api.spotify.com/v1/albums/7lCa8DnB02s8GHy26QqvOw",
+                "id": "7lCa8DnB02s8GHy26QqvOw",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/f2351cd9f53d41ad7f086f92860ed13ca2ca96b7",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/87a19c34c037c056c7b56cba3b1bf84ccdd72f52",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ea9da6ddf945e807c6aab630f8d8c004b3cf092c",
+                        "width": 64
+                    }
+                ],
+                "name": "Ginger",
+                "release_date": "2018-05-18",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:7lCa8DnB02s8GHy26QqvOw"
+            },
+            {
+                "album_type": "compilation",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+                        "id": "0LyfQWJT6nXafLPZqxe9Of",
+                        "name": "Varios Artistas",
+                        "type": "artist",
+                        "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "BE",
+                    "BG",
+                    "BO",
+                    "BR",
+                    "CA",
+                    "CH",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "DO",
+                    "EC",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GR",
+                    "GT",
+                    "HK",
+                    "HN",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IS",
+                    "IT",
+                    "JP",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MC",
+                    "MT",
+                    "MX",
+                    "MY",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NZ",
+                    "PA",
+                    "PE",
+                    "PH",
+                    "PL",
+                    "PT",
+                    "PY",
+                    "RO",
+                    "SE",
+                    "SG",
+                    "SK",
+                    "SV",
+                    "TH",
+                    "TR",
+                    "TW",
+                    "US",
+                    "UY",
+                    "VN",
+                    "ZA"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/6m7n9JuAOMcy8X3ntO0Ktf"
+                },
+                "href": "https://api.spotify.com/v1/albums/6m7n9JuAOMcy8X3ntO0Ktf",
+                "id": "6m7n9JuAOMcy8X3ntO0Ktf",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/fbba992b3139de7031bbd9514d2c2cf3a483cc8a",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/a4c83e64584828162fb75bfedc07f585723025fd",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/53cfc44a9f1809297a5bced457b0d4ac508dbb0e",
+                        "width": 64
+                    }
+                ],
+                "name": "Mean Girls (Original Broadway Cast Recording)",
+                "release_date": "2018-05-18",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:6m7n9JuAOMcy8X3ntO0Ktf"
             }
         ],
         "limit": 30,
