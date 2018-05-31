@@ -13,7 +13,7 @@ namespace CacheSQLite.Services
             HttpClient client = new HttpClient();
             string fileIndex = string.Empty;
             fileIndex = FileIndexBaseOnSeconds();
-            string url = string.Format("https://raw.githubusercontent.com/seba47/Cache-SQLite/master/FakeServiceResponses/spotify{0}secs.json", fileIndex);
+            string url = string.Format("https://raw.githubusercontent.com/pgonzalezmorelli/Cache-SQLite/master/FakeServiceResponses/spotify{0}secs.json", fileIndex);
             var response = await client.GetAsync(url);
 
             var content = await response.Content.ReadAsStringAsync();
